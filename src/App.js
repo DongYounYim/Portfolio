@@ -1,7 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./page/Main";
+import NotFound from "./page/NotFound";
+
 function App() {
   return (
     <div className="App">
-      <h1>포토폴리오 시작</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
