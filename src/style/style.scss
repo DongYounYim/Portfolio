@@ -7,3 +7,28 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+
+.Banner {
+  height: 600px;
+  position: relative;
+  text-align: center;
+
+  .ParagraphDiv {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+}
+
+.Banner::before {
+  background: url("../assets/images/23856.jpg");
+  background-size: cover;
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
