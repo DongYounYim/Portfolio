@@ -1,11 +1,32 @@
-.header {
-  text-align: center;
+$dark-color: #121212;
+$font-color: #bbb;
+
+body {
+  background-color: $dark-color;
+  color: $font-color;
+  margin: 0;
 }
 
-.navigation {
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 16px 0;
+}
+
+.nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 4px 16px;
+
+  &:hover {
+    background-color: coral;
+  }
 }
 
 .Banner {
@@ -16,8 +37,9 @@
   .ParagraphDiv {
     display: inline-block;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

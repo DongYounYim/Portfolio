@@ -6,6 +6,7 @@ export default function Main() {
   return (
     <div>
       <Header />
+      <hr />
       <Navigation />
       <Banner />
       <h1>메인 페이지</h1>
