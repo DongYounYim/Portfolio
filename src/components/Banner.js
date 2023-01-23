@@ -4,6 +4,9 @@ export default function Banner() {
       <div className="ParagraphDiv">
         <p>I'm younique</p>
         <p>프론트엔드 개발자 임동윤입니다.</p>
+        <a className="BorderTextBox" href="#content1">
+          Get Start
+        </a>
       </div>
     </div>
   );
