@@ -10,12 +10,16 @@ export default function Main() {
       <Navigation />
       <div className="container">
         <Banner />
-        <div id="content1">
-          <h2>아이구 여기에 이제 하나씩 채워볼까</h2>
-        </div>
-        <div id="content2">
-          <h2>여기는 뭘 채울까</h2>
-        </div>
+        <section id="intro">
+          <div className="CardContent" id="content1"></div>
+          <div
+            className="CardContent"
+            style={{ backgroundColor: "#f44" }}
+          ></div>
+        </section>
+        <section>
+          <h1>ㄴㅇㄹㄹ</h1>
+        </section>
       </div>
     </div>
   );

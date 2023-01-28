@@ -2,6 +2,7 @@ $dark-color: #121212;
 $font-color: #bbb;
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -95,6 +96,15 @@ body {
   bottom: 0px;
 }
 
-#content1 {
-  padding: 500px;
+#intro {
+  height: 100vh;
+  display: inline-flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+
+  .CardContent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+  }
 }
