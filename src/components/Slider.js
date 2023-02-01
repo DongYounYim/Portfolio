@@ -1,17 +1,32 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Slider = ({ children, id }) => {
+  const [width, setWidth] = useState(window.innerWidth);
   const [state, setState] = useState(0);
   const scrollRef = useRef();
   const handleMoveLeft = () => {
     if (state !== 0) {
-      setState(state - 1);
+      setState(state - width);
+      scrollRef.current.scrollTo({
+        top: 0,
+        left: state - width,
+        behavior: "smooth",
+      });
     }
   };
 
   const handleMoveRight = () => {
-    setState(state + 1);
+    setState(state + width);
+    scrollRef.current.scrollTo({
+      top: 0,
+      left: state + width,
+      behavior: "smooth",
+    });
   };
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, [window.innerWidth]);
 
   return (
     <div style={{ display: "flex" }}>
