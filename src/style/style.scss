@@ -2,8 +2,8 @@ $dark-color: #121212;
 $font-color: #bbb;
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  //overflow-x: hidden;
 }
 
 body {
@@ -96,15 +96,36 @@ body {
   bottom: 0px;
 }
 
-#intro {
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
+
+.slider {
   height: 100vh;
-  display: inline-flex;
-  overflow: scroll;
+  // transform: translateX(0%);
+  // animation: move 50000ms infinite;
+}
+
+#intro {
+  display: flex;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+  // 스크롤 바 제거
+  &::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+  }
 
   .CardContent {
+    flex: none;
     width: 100vw;
-    height: 100vh;
     background-color: #fff;
+    color: black;
+    text-align: center;
+    line-height: 100px;
   }
 }
