@@ -5,27 +5,35 @@ const Slider = ({ children, id }) => {
   const [state, setState] = useState(0);
   const scrollRef = useRef();
   const handleMoveLeft = () => {
-    if (state !== 0) {
-      setState(state - width);
+    if (state > 0) {
+      setState(state - 1);
       scrollRef.current.scrollTo({
         top: 0,
-        left: state - width,
+        left: (state - 1) * width,
         behavior: "smooth",
       });
     }
   };
 
   const handleMoveRight = () => {
-    setState(state + width);
+    setState(state + 1);
     scrollRef.current.scrollTo({
       top: 0,
-      left: state + width,
+      left: (state + 1) * width,
       behavior: "smooth",
     });
   };
 
+  //TODO: Resize에 반응할 수 있도록 useEffect 조정
+
   useEffect(() => {
     setWidth(window.innerWidth);
+    scrollRef.current.scrollTo({
+      top: 0,
+      left: state * width,
+      behavior: "smooth",
+    });
+    console.log("useEff");
   }, [window.innerWidth]);
 
   return (
