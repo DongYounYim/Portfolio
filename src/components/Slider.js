@@ -12,14 +12,39 @@ const Slider = ({ children, id }) => {
         left: (state - 1) * width,
         behavior: "smooth",
       });
+    } else {
+      setState(children.length - 1);
+      scrollRef.current.scrollRef({
+        top: 0,
+        left: (children.length - 1) * width,
+        behavior: "smooth",
+      });
     }
   };
 
   const handleMoveRight = () => {
-    setState(state + 1);
+    if (state < children.length) {
+      setState(state + 1);
+      scrollRef.current.scrollTo({
+        top: 0,
+        left: (state + 1) * width,
+        behavior: "smooth",
+      });
+    } else {
+      setState(0);
+      scrollRef.current.scrollRef({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
     scrollRef.current.scrollTo({
       top: 0,
-      left: (state + 1) * width,
+      left: state * window.innerWidth,
       behavior: "smooth",
     });
   };
@@ -33,8 +58,10 @@ const Slider = ({ children, id }) => {
       left: state * width,
       behavior: "smooth",
     });
-    console.log("useEff");
-  }, [window.innerWidth]);
+    window.addEventListener("resize", handleResize);
+
+    return window.removeEventListener("resize", handleResize);
+  }, [handleResize, width, setWidth]);
 
   return (
     <div style={{ display: "flex" }}>
