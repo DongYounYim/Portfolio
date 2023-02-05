@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import useTimeoutFn from "../hooks/useTimeoutFn";
 
 const Slider = ({ children, id }) => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -49,7 +50,24 @@ const Slider = ({ children, id }) => {
     });
   };
 
-  //TODO: Resize에 반응할 수 있도록 useEffect 조정
+  //TODO: Resize에 반응할 수 있도록 useEffect
+
+  const [run, clear] = useTimeoutFn(() => {
+    if (state < children.length - 1) {
+      handleMoveRight();
+    } else {
+      setState(0);
+      scrollRef.current.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  }, 5000);
+
+  useEffect(() => {
+    run();
+  }, [state]);
 
   useEffect(() => {
     setWidth(window.innerWidth);
