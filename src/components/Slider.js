@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import useTimeoutFn from "../hooks/useTimeoutFn";
+import Icon from "./Icon";
 
 const Slider = ({ children, id }) => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -84,7 +85,7 @@ const Slider = ({ children, id }) => {
   return (
     <div style={{ display: "flex", position: "relative" }}>
       <button onClick={handleMoveLeft} className="arrowButton">
-        {"<"}
+        <Icon name="chevron-left" size={32} />
       </button>
       <section
         id={id}
@@ -99,7 +100,7 @@ const Slider = ({ children, id }) => {
         className="arrowButton"
         style={{ right: 0 }}
       >
-        {">"}
+        <Icon name="chevron-right" size={32} />
       </button>
     </div>
   );
