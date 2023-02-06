@@ -82,8 +82,10 @@ const Slider = ({ children, id }) => {
   }, [handleResize, width, setWidth]);
 
   return (
-    <div style={{ display: "flex" }}>
-      <button onClick={handleMoveLeft}>왼쪽</button>
+    <div style={{ display: "flex", position: "relative" }}>
+      <button onClick={handleMoveLeft} className="arrowButton">
+        {"<"}
+      </button>
       <section
         id={id}
         className="slider"
@@ -92,7 +94,13 @@ const Slider = ({ children, id }) => {
       >
         {children}
       </section>
-      <button onClick={handleMoveRight}>오른쪽</button>
+      <button
+        onClick={handleMoveRight}
+        className="arrowButton"
+        style={{ right: 0 }}
+      >
+        {">"}
+      </button>
     </div>
   );
 };
