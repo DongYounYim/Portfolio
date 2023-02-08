@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import useTimeoutFn from "../hooks/useTimeoutFn";
-import Icon from "./Icon";
+import useTimeoutFn from "../../hooks/useTimeoutFn";
+import Icon from "../Icon";
 
 const Slider = ({ children, id }) => {
   const [width, setWidth] = useState(window.innerWidth);

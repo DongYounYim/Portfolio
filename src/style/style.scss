@@ -125,6 +125,11 @@ body {
     color: black;
     text-align: center;
     line-height: 100px;
+
+    .Card {
+      display: inline-flex;
+      padding: 10vh 10vw;
+    }
   }
 }
 
