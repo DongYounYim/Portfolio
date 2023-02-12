@@ -25,18 +25,20 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="CardContent" style={{ backgroundColor: "green" }}>
-            2
-          </div>
-          <div className="CardContent" style={{ backgroundColor: "blue" }}>
-            3
-          </div>
-          <div className="CardContent" style={{ backgroundColor: "gray" }}>
-            4
-          </div>
+          <div className="CardContent">2</div>
+          <div className="CardContent">3</div>
+          <div className="CardContent">4</div>
         </Slider>
         <section style={{ height: "100vh" }}>
-          <h1>ㄴㅇㄹㄹ</h1>
+          <div style={{ display: "flex" }}>
+            <div>
+              <h3>하나하나</h3>
+            </div>
+            <p>둘둘</p>
+          </div>
+          <div>
+            <p>더알아보기</p>
+          </div>
         </section>
       </div>
     </div>
