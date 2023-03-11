@@ -1,6 +1,6 @@
 import { Icon, Spacer } from "../";
 
-export default function Header() {
+export default function Header({ ...props }) {
   return (
     <section className="header">
       <Spacer />

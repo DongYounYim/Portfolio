@@ -11,6 +11,10 @@ const SliderContent1 = () => {
         <h2>안녕하세요</h2>
         <h2>프론트엔드 개발자 임동윤입니다.</h2>
         <span>
+          편리한 사용경험과 차별화된 서비스를 제공하는 프론트에드 개발자입니다.
+        </span>
+        <br />
+        <span>
           현재 충남대학교 컴퓨터공학과 학부 4학년으로 공부 중이며, 프론트,
           백엔드뿐만 아니라 CS 전반적인 지식을 기반으로 좋은 프로그램을 개발하려
           노력 중입니다.
@@ -19,7 +23,7 @@ const SliderContent1 = () => {
           <div>
             <h4>2018</h4>
             <ol>
-              <li>천안 중앙고등학교 48회 졸업</li>
+              <li>천안중앙고등학교 48회 졸업</li>
               <li>충남대학교 컴퓨터공학과 18학번 입학</li>
             </ol>
           </div>
@@ -33,7 +37,7 @@ const SliderContent1 = () => {
             <h4>2021</h4>
             <ol>
               <li>육군 예비역 하사 제대 / 군 복학</li>
-              <li>CN Music Festa 홍보 홈페이지 제작</li>
+              <li>CN Music Festival 홍보 홈페이지 제작</li>
             </ol>
           </div>
           <div>
@@ -51,7 +55,7 @@ const SliderContent1 = () => {
           <div>
             <h4>2023</h4>
             <ol>
-              <li>보안 정보 동아리 ARGOS 부회장</li>
+              <li>충남대학교 보안 정보 동아리 ARGOS 부회장</li>
               <li>네이버 커넥트 재단 1784 스쿨혁명 멘토 참여</li>
               <li>CNU SWAcademy 프론트엔드 과정 수료</li>
             </ol>

@@ -1,15 +1,46 @@
 $dark-color: #323233;
 $font-color: white;
 
+// PEBBLE 색 조합
+$pebble-dark: #433e49;
+$pebble-light: #928490;
+$pebble-sub: #dbc1ad;
+$pebble-bg: #f3e8eb;
+
+@font-face {
+  font-family: "NanumSquareRoundBold";
+  src: url(../assets/fonts/NanumSquareRoundOTFEB.otf);
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url(../assets/fonts/NanumSquareRoundOTFR.otf);
+}
+
 html {
   scroll-behavior: smooth;
   //overflow-x: hidden;
 }
 
 body {
-  background-color: $dark-color;
+  background-color: $pebble-dark;
   color: $font-color;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "NanumSquareRoundBold";
+}
+
+span,
+ol,
+li {
+  font-family: "NanumSquareRound";
+  word-break: keep-all;
 }
 
 .header {
@@ -89,8 +120,8 @@ body {
 }
 
 .Banner::before {
-  background: url("../assets/images/23856.jpg");
-  background-size: cover;
+  background: url("../assets/images/backImage.jpg");
+  background-size: auto;
   background-attachment: fixed;
   content: "";
   opacity: 0.5;
@@ -149,6 +180,10 @@ body {
   outline: none;
 }
 
+.history {
+  margin-top: 16px;
+}
+
 .history h4 {
   position: relative;
   font-size: 24px;
@@ -156,6 +191,7 @@ body {
   margin: 0;
   line-height: 1.5;
 }
+
 .history h4:before {
   content: "";
   position: absolute;
@@ -166,7 +202,7 @@ body {
   height: 17px;
   border-radius: 100%;
   background: #fff;
-  border: 5px solid #ff5a2b;
+  border: 5px solid $pebble-light;
   box-sizing: border-box;
 }
 
@@ -198,4 +234,8 @@ body {
 .history li {
   font-size: 16px;
   line-height: 29px;
+}
+
+.pebbleBackground {
+  background-color: $pebble-bg;
 }

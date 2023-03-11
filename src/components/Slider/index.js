@@ -67,7 +67,7 @@ const Slider = ({ children, id }) => {
   }, 5000);
 
   useEffect(() => {
-    run();
+    // run();
   }, [state]);
 
   useEffect(() => {
