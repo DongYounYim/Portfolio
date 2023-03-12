@@ -27,8 +27,8 @@ const SliderContent2 = () => {
       >
         <h2>HTML5, CSS3, JavaScript 기반으로 웹 개발 공부를 시작했습니다. </h2>
         <h2>
-          현재는 React 기반의 웹페이지를 주로 제작하며, TypeScript, SCSS,
-          Next.js 등 웹 개발에 관련된 기술스택들을 습득 중 입니다.
+          현재는 React 기반의 웹페이지를 주로 제작하며 TypeScript, SCSS, Next.js
+          등 웹개발에 관련된 기술스택들을 습득 중 입니다.
         </h2>
         <h3>제작 웹 페이지</h3>
         <ol>
