@@ -240,3 +240,29 @@ li {
 .pebbleBackground {
   background-color: $pebble-bg;
 }
+
+.imgIcon {
+  width: 15px;
+  height: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.badgeDiv {
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: white;
+
+  :nth-child(2) {
+    margin-left: 4px;
+  }
+}
+
+.numbericOrder li {
+  line-height: 1.5;
+}
