@@ -1,7 +1,10 @@
 import { Header, Banner, Slider } from "../components";
 
-import SliderContent1 from "../SliderContents/SliderContent1";
-import SliderContent2 from "../SliderContents/SliderContent2";
+import {
+  SliderContent1,
+  SliderContent2,
+  SliderContent3,
+} from "../SliderContents";
 
 export default function Main() {
   return (
@@ -16,7 +19,9 @@ export default function Main() {
           <div className="CardContent">
             <SliderContent2 />
           </div>
-          <div className="CardContent">모바일 관련</div>
+          <div className="CardContent">
+            <SliderContent3 />
+          </div>
           <div className="CardContent">기타</div>
         </Slider>
         <section style={{ height: "100vh" }}>

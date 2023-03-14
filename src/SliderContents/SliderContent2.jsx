@@ -17,7 +17,7 @@ const SliderContent2 = () => {
           alignItems: "center",
         }}
       >
-        <img src={WebDevelop} placeholder="프로필 이미지" />
+        <img src={WebDevelop} alt="웹 이미지" />
       </div>
       <div
         style={{
