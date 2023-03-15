@@ -1,9 +1,11 @@
 import mobileDevelop from "../assets/images/mobileDevelop.png";
 import GithubIcon from "../assets/images/githubIcon.png";
+import PDFImage from "../assets/images/pdfIcon.webp";
 
-import { LinkBadge } from "../components";
+import { LinkBadge, Spacer } from "../components";
 
 const SliderContent3 = () => {
+  // TODO 파일 다운로드 구현하기
   return (
     <div
       style={{ display: "flex", height: "-webkit-fill-available" }}
@@ -44,12 +46,21 @@ const SliderContent3 = () => {
             name="Github"
           />
           <li>달이 들어주는 오늘 (Silicon Valley Internship) - ReactNative</li>
-          <LinkBadge
-            href="https://github.com/2022-SiliconValleyInternship-IT23"
-            src={GithubIcon}
-            alt="githubIcon"
-            name="Github"
-          />
+          <Spacer>
+            <LinkBadge
+              href="https://github.com/2022-SiliconValleyInternship-IT23"
+              src={GithubIcon}
+              alt="githubIcon"
+              name="Github"
+            />
+            <LinkBadge
+              href="./src/files/SVIntership.pdf"
+              src={PDFImage}
+              alt="pdfDownload"
+              name="PDF"
+              download={true}
+            />
+          </Spacer>
           <li>BoothStamp (월봉고등학교 Flutter 교육) - Flutter</li>
           <LinkBadge
             href="https://github.com/DongYounYim/AlFestival_Booth"
