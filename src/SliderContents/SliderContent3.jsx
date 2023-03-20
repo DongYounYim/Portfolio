@@ -30,13 +30,13 @@ const SliderContent3 = () => {
           justifyContent: "center",
         }}
       >
-        <h2>웹 언어를 기반으로 모바일 앱 제작도 진행했습니다.</h2>
-        <h2>
+        <h4>웹 언어를 기반으로 모바일 앱 제작도 진행했습니다.</h4>
+        <h4>
           React를 기반으로 웹/앱 제작 및 React Native 및 Flutter를 사용하여
           하이브리드 앱 개발을 하는데 관심있고 swift, kotlin을 통해 네이티브 앱
           제작에도 도전하기 위해 공부 중 입니다.
-        </h2>
-        <h3>제작 애플리케이션</h3>
+        </h4>
+        <h5>제작 애플리케이션</h5>
         <ol className="numbericOrder">
           <li>슬기로운 문화생활 (Design-sprint 교육) - Flutter </li>
           <LinkBadge
