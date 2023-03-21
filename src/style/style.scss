@@ -76,6 +76,10 @@ li {
   margin: 0 20px;
   font-weight: 600;
   padding: 16px 0;
+
+  h3 {
+    margin: 0;
+  }
 }
 
 .nav-bar {
@@ -109,6 +113,7 @@ li {
 
     & > p {
       font-weight: 600;
+      font-size: 24px;
     }
   }
 
@@ -164,14 +169,12 @@ li {
   }
 }
 
-.slider {
-  height: 100vh;
-}
-
 #intro {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  height: 100vh;
+  position: relative;
   // 스크롤 바 제거
   &::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
@@ -185,22 +188,11 @@ li {
     overflow: hidden;
 
     .CardImage {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 95%;
+      height: 95%;
+      object-fit: scale-down;
     }
   }
-}
-
-.arrowButton {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  z-index: 100;
-  background-color: transparent;
-  color: black;
-  border: none;
-  outline: none;
 }
 
 .history {

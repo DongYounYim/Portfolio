@@ -1,28 +1,10 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import useTimeoutFn from "../../hooks/useTimeoutFn";
-import Icon from "../Icon";
 
-const Slider = ({ children, id }) => {
+const Slider = ({ children }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [state, setState] = useState(0);
   const scrollRef = useRef();
-  const handleMoveLeft = () => {
-    if (state > 0) {
-      setState(state - 1);
-      scrollRef.current.scrollTo({
-        top: 0,
-        left: (state - 1) * width,
-        behavior: "smooth",
-      });
-    } else {
-      setState(children.length - 1);
-      scrollRef.current.scrollRef({
-        top: 0,
-        left: (children.length - 1) * width,
-        behavior: "smooth",
-      });
-    }
-  };
 
   const handleMoveRight = () => {
     if (state < children.length) {
@@ -42,18 +24,16 @@ const Slider = ({ children, id }) => {
     }
   };
 
-  const handleResize = () => {
+  const handleResize = useCallback(() => {
     setWidth(window.innerWidth);
     scrollRef.current.scrollTo({
       top: 0,
       left: state * window.innerWidth,
       behavior: "smooth",
     });
-  };
+  }, [state]);
 
-  //TODO: Resize에 반응할 수 있도록 useEffect
-
-  const [run, clear] = useTimeoutFn(() => {
+  const [run] = useTimeoutFn(() => {
     if (state < children.length - 1) {
       handleMoveRight();
     } else {
@@ -67,8 +47,8 @@ const Slider = ({ children, id }) => {
   }, 5000);
 
   useEffect(() => {
-    // run();
-  }, [state]);
+    run();
+  }, [state, run]);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -80,29 +60,16 @@ const Slider = ({ children, id }) => {
     window.addEventListener("resize", handleResize);
 
     return window.removeEventListener("resize", handleResize);
-  }, [handleResize, width, setWidth]);
+  }, [handleResize, state, width, setWidth]);
 
   return (
-    <div style={{ display: "flex", position: "relative" }}>
-      <button onClick={handleMoveLeft} className="arrowButton">
-        <Icon name="chevron-left" size={32} />
-      </button>
-      <section
-        id={id}
-        className="slider"
-        ref={scrollRef}
-        style={{ transform: `scrollX(${state * 100}%)`, fontSize: "16px" }}
-      >
-        {children}
-      </section>
-      <button
-        onClick={handleMoveRight}
-        className="arrowButton"
-        style={{ right: 0 }}
-      >
-        <Icon name="chevron-right" size={32} />
-      </button>
-    </div>
+    <section
+      id="intro"
+      style={{ transform: `scrollX(${state * 100}%)` }}
+      ref={scrollRef}
+    >
+      {children}
+    </section>
   );
 };
 

@@ -7,7 +7,7 @@ const SliderContent2 = () => {
   return (
     <div
       style={{ display: "flex", height: "-webkit-fill-available" }}
-      className="pebbleBackground"
+      className="CardContent pebbleBackground"
     >
       <div
         style={{
@@ -17,7 +17,7 @@ const SliderContent2 = () => {
           alignItems: "center",
         }}
       >
-        <img src={WebDevelop} alt="웹 이미지" />
+        <img src={WebDevelop} alt="웹 이미지" className="CardImage" />
       </div>
       <div
         style={{
@@ -28,12 +28,7 @@ const SliderContent2 = () => {
           justifyContent: "center",
         }}
       >
-        <h4>HTML5, CSS3, JavaScript 기반으로 웹 개발 공부를 시작했습니다. </h4>
-        <h4>
-          현재는 React 기반의 웹페이지를 주로 제작하며 TypeScript, SCSS, Next.js
-          등 웹개발에 관련된 기술스택들을 습득 중 입니다.
-        </h4>
-        <h5>제작 웹 페이지</h5>
+        <h5>제작 웹 페이지 (프로젝트)</h5>
         <ol className="numbericOrder">
           <li>CNMusicFestival 홍보 홈페이지 제작</li>
           <li>2022 엔지니어링페어 컴퓨터융합학부 행사 페이지 제작</li>

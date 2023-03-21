@@ -3,9 +3,16 @@ import profileImg from "../assets/images/profile.jpg";
 
 const SliderContent1 = () => {
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ flex: 1, textAlign: "center", objectFit: "fill" }}>
-        <img src={profileImg} placeholder="프로필 이미지" />
+    <div style={{ display: "flex" }} className="CardContent" id="content1">
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <img src={profileImg} alt="프로필 이미지" className="CardImage" />
       </div>
       <div style={{ flex: 1, margin: "0 16px" }}>
         <h2>안녕하세요</h2>

@@ -4,7 +4,7 @@ export default function Header({ ...props }) {
   return (
     <section className="header">
       <Spacer />
-      <span>I'm younique</span>
+      <h3>I'm younique</h3>
       <Icon name="list" size={32} color="white" />
     </section>
   );
