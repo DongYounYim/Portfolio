@@ -273,3 +273,11 @@ a {
 .numbericOrder li {
   line-height: 1.5;
 }
+
+.container {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+}
