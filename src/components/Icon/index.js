@@ -23,6 +23,7 @@ const Icon = ({
         width: size,
         height: size,
         transform: rotate ? `rotate(${rotate}deg)` : undefined,
+        ...props.style,
       }}
       {...props}
     >

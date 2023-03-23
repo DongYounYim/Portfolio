@@ -26,7 +26,6 @@ $pebble-bg: #f3e8eb;
 
 html {
   scroll-behavior: smooth;
-  //overflow-x: hidden;
 }
 
 body {
@@ -71,11 +70,14 @@ li {
 
 .header {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
   font-weight: 600;
   padding: 16px 0;
+  z-index: 1100;
+  background-color: $dark-color;
 
   h3 {
     margin: 0;
@@ -100,7 +102,7 @@ li {
 }
 
 .Banner {
-  height: calc(100vh - 64px);
+  height: calc(90vh - 64px);
   position: relative;
   text-align: center;
 
@@ -173,7 +175,7 @@ li {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   // 스크롤 바 제거
   &::-webkit-scrollbar {

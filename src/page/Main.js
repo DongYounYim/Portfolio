@@ -9,14 +9,14 @@ import {
 export default function Main() {
   return (
     <div>
-      <Header style={{ marginBottom: "16px " }} />
+      <Header />
       <Banner />
       <Slider>
         <SliderContent1 />
         <SliderContent2 />
         <SliderContent3 />
       </Slider>
-      <section style={{ height: "100vh" }}>
+      <section style={{ height: "90vh" }}>
         <div style={{ display: "flex" }}>
           <div>
             <h3>하나하나</h3>
