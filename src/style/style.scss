@@ -19,9 +19,13 @@ $pebble-bg: #f3e8eb;
 
 // 폰트 사이즈 반응형 설정
 :root {
-  --font-size-lg: clamp(1.25rem, 3vw, 1.5rem);
-  --font-size-md: clamp(1rem, 2vw, 1.25rem);
-  --font-size-sm: clamp(0.75rem, 1vw, 1rem);
+  --font-size-xlg: clamp(2.5rem, 3.5vw, 3rem);
+  --font-size-lg: clamp(2rem, 3vw, 2.5rem);
+  --font-size-ml: clamp(1.75rem, 2.5vw, 2rem);
+  --font-size-md: clamp(1.5rem, 2vw, 1.75rem);
+  --font-size-ms: clamp(1.25rem, 1.5vw, 1.5rem);
+  --font-size-sm: clamp(1rem, 1vw, 1.25rem);
+  --font-size-xs: clamp(0.75rem, 0.5vw, 1rem);
 }
 
 html {
@@ -43,22 +47,34 @@ h5 {
   word-break: keep-all;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+  font-size: var(--font-size-xlg);
+}
+
+h2 {
   font-size: var(--font-size-lg);
 }
 
-h4,
-h5 {
+h3 {
+  font-size: var(--font-size-ml);
+}
+
+h4 {
   font-size: var(--font-size-md);
 }
 
+h5 {
+  font-size: var(--font-size-ms);
+}
+
 p,
-span,
-li,
 ol {
   font-size: var(--font-size-sm);
+}
+
+span,
+li {
+  font-size: var(--font-size-xs);
 }
 
 span,
@@ -79,7 +95,7 @@ li {
   z-index: 1100;
   background-color: $dark-color;
 
-  h3 {
+  h2 {
     margin: 0;
   }
 }
@@ -200,14 +216,14 @@ li {
   margin-top: 16px;
 }
 
-.history h4 {
+.history h5 {
   position: relative;
   color: #000;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1;
 }
 
-.history h4:before {
+.history h5:before {
   content: "";
   position: absolute;
   left: -48px;
@@ -247,7 +263,7 @@ li {
 }
 
 .history li {
-  line-height: 29px;
+  line-height: 24px;
 }
 
 .pebbleBackground {
@@ -308,6 +324,10 @@ a {
 .icon-text-flex-container {
   display: flex;
   min-width: 12rem;
+}
+
+.head-smooth-margin {
+  margin: 8px 0;
 }
 
 @media screen and (max-width: 1023px) {

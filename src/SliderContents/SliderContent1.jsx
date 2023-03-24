@@ -18,8 +18,8 @@ const SliderContent1 = () => {
         <img src={profileImg} alt="프로필 이미지" className="CardImage" />
       </div>
       <div style={{ flex: 1, margin: "0 16px" }}>
-        <h2>안녕하세요</h2>
-        <h2>프론트엔드 개발자 임동윤입니다.</h2>
+        <h5 className="head-smooth-margin">안녕하세요</h5>
+        <h5 className="head-smooth-margin">프론트엔드 개발자 임동윤입니다.</h5>
         <span>
           편리한 사용경험과 차별화된 서비스를 제공하는 프론트에드 개발자입니다.
         </span>
@@ -31,27 +31,20 @@ const SliderContent1 = () => {
         </span>
         <div className="history">
           <div>
-            <h4>2018</h4>
+            <h5>2018</h5>
             <ol>
               <li>천안중앙고등학교 48회 졸업</li>
               <li>충남대학교 컴퓨터공학과 18학번 입학</li>
             </ol>
           </div>
           <div>
-            <h4>2019</h4>
+            <h5>2021</h5>
             <ol>
-              <li>군 휴학</li>
-            </ol>
-          </div>
-          <div>
-            <h4>2021</h4>
-            <ol>
-              <li>육군 예비역 하사 제대 / 군 복학</li>
               <li>CN Music Festival 홍보 홈페이지 제작</li>
             </ol>
           </div>
           <div>
-            <h4>2022</h4>
+            <h5>2022</h5>
             <ol>
               <li>Design Sprint 교육 수료</li>
               <li>2022 컴퓨터 융합학부 학생회 MEMORY 기획부장</li>
@@ -63,7 +56,7 @@ const SliderContent1 = () => {
             </ol>
           </div>
           <div>
-            <h4>2023</h4>
+            <h5>2023</h5>
             <ol>
               <li>충남대학교 보안 정보 동아리 ARGOS 부회장</li>
               <li>네이버 커넥트 재단 1784 스쿨혁명 멘토 참여</li>
