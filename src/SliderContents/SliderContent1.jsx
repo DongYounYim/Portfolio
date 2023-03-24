@@ -3,7 +3,10 @@ import profileImg from "../assets/images/profile.jpg";
 
 const SliderContent1 = () => {
   return (
-    <div style={{ display: "flex" }} className="CardContent" id="content1">
+    <div
+      style={{ display: "flex", backgroundColor: "white" }}
+      className="CardContent"
+    >
       <div
         style={{
           display: "flex",

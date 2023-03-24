@@ -72,7 +72,7 @@ li {
   display: flex;
   position: fixed;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: 600;
   padding: 16px 0;
@@ -102,7 +102,7 @@ li {
 }
 
 .Banner {
-  height: calc(90vh - 64px);
+  height: calc(95vh - 64px);
   position: relative;
   text-align: center;
 
@@ -171,7 +171,7 @@ li {
   }
 }
 
-#intro {
+#slider {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -185,7 +185,6 @@ li {
   .CardContent {
     flex: none;
     width: 100vw;
-    background-color: #fff;
     color: black;
     overflow: hidden;
 
@@ -282,4 +281,43 @@ a {
   background-color: white;
   width: fit-content;
   height: fit-content;
+}
+
+.sectionTitle {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+
+  & > :nth-child(n) {
+    padding: 12px;
+  }
+
+  h4 {
+    margin: 4px 0 8px 0;
+  }
+}
+
+.icon-text-flex-container {
+  display: flex;
+  min-width: 12rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
 }

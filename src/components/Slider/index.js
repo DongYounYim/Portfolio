@@ -63,13 +63,13 @@ const Slider = ({ children }) => {
   }, [handleResize, state, width, setWidth]);
 
   return (
-    <section
-      id="intro"
+    <div
+      id="slider"
       style={{ transform: `scrollX(${state * 100}%)` }}
       ref={scrollRef}
     >
       {children}
-    </section>
+    </div>
   );
 };
 
