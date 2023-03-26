@@ -306,6 +306,13 @@ a {
   padding: 12px;
 }
 
+.sectionParagraph {
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  padding: 8px;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -316,7 +323,11 @@ a {
     padding: 12px;
   }
 
-  h4 {
+  p {
+    margin: 0;
+  }
+
+  h5 {
     margin: 4px 0 8px 0;
   }
 }
@@ -337,6 +348,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .history {
+    display: none;
+  }
   .gridContainer {
     grid-template-columns: 1fr;
   }

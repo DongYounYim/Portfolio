@@ -5,10 +5,7 @@ import GithubIcon from "../assets/images/githubIcon.png";
 
 const SliderContent2 = () => {
   return (
-    <div
-      style={{ display: "flex", height: "-webkit-fill-available" }}
-      className="CardContent pebbleBackground"
-    >
+    <div style={{ display: "flex" }} className="CardContent pebbleBackground">
       <div
         style={{
           display: "flex",
