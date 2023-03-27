@@ -30,9 +30,11 @@ export default function Main() {
           <h5>Mobile-App</h5>
           <p>React Native, Flutter, Dart</p>
           <h5>Back-end</h5>
-          <p>Python, Django, Flask, Firebase, MySQL, Oracle</p>
+          <p>Python, Node.js, Django, Flask, Firebase, MySQL, Oracle</p>
           <h5>Deploy</h5>
-          <span>AWS, Naver Cloud, Firebase, Vercel</span>
+          <p>AWS, Naver Cloud, Oracle Cloud, Firebase, Vercel</p>
+          <h5>Version-control</h5>
+          <span>Github</span>
         </div>
       </section>
       <Aboutme />

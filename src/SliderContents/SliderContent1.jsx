@@ -14,11 +14,11 @@ const SliderContent1 = () => {
       >
         <img src={profileImg} alt="프로필 이미지" className="CardImage" />
       </div>
-      <div style={{ flex: 1, margin: "0 16px" }}>
+      <div className="CardText">
         <h5 className="head-smooth-margin">안녕하세요</h5>
         <h5 className="head-smooth-margin">프론트엔드 개발자 임동윤입니다.</h5>
         <span>
-          편리한 사용경험과 차별화된 서비스를 제공하는 프론트에드 개발자입니다.
+          편리한 사용경험과 차별화된 서비스를 제공하는 프론트엔드 개발자입니다.
         </span>
         <br />
         <span>
