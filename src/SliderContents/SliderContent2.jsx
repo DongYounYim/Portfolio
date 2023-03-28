@@ -16,15 +16,7 @@ const SliderContent2 = () => {
       >
         <img src={WebDevelop} alt="웹 이미지" className="CardImage" />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-          margin: "0 16px",
-          justifyContent: "center",
-        }}
-      >
+      <div className="CardText">
         <h5>제작 웹 페이지 (프로젝트)</h5>
         <ol className="numbericOrder">
           <li>CNMusicFestival 홍보 홈페이지 제작</li>

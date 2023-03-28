@@ -5,3 +5,4 @@ export { default as Navigation } from "./Navigation";
 export { default as Slider } from "./Slider";
 export { default as Spacer } from "./Spacer";
 export { default as LinkBadge } from "./LinkBadge";
+export { default as Ulept } from "./Ulept";

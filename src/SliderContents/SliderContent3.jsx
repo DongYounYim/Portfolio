@@ -21,15 +21,7 @@ const SliderContent3 = () => {
       >
         <img src={mobileDevelop} alt="모바일 이미지" className="CardImage" />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-          margin: "0 16px",
-          justifyContent: "center",
-        }}
-      >
+      <div className="CardText">
         <h5>제작 애플리케이션 (프로젝트)</h5>
         <ol className="numbericOrder">
           <li>슬기로운 문화생활 (Design-sprint 교육) - Flutter </li>
