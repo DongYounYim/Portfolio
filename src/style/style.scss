@@ -320,7 +320,7 @@ a {
   justify-items: center;
 
   & > :nth-child(n) {
-    padding: 12px;
+    margin: 12px;
   }
 
   p {
@@ -354,4 +354,25 @@ a {
   .gridContainer {
     grid-template-columns: 1fr;
   }
+}
+
+.skillSetContainer {
+  width: 20rem;
+  max-width: 40rem;
+  height: max-content;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  border-radius: 15px;
+
+  h5 {
+    margin: 8px;
+  }
+}
+
+.skillIconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
