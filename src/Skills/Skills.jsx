@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section style={{ backgroundColor: "#FDD36A" }}>
       <h3 className="sectionTitle">Skills</h3>
-      <div className="gridContainer" style={{}}>
+      <div className="gridContainer">
         <div className="skillSetContainer">
           <h5>Front-end</h5>
           <div className="skillIconContainer">
@@ -49,6 +49,30 @@ const Skills = () => {
               style={{ fontSize: "6rem" }}
             />
             <Icon icon="logos:dart" style={{ fontSize: "6rem" }} />
+          </div>
+        </div>
+        <div className="skillSetContainer">
+          <h5>Version Control</h5>
+          <div className="skillIconContainer">
+            <Icon icon="mdi:git" style={{ fontSize: "6rem" }} />
+            <Icon icon="mdi:github" style={{ fontSize: "6rem" }} />
+          </div>
+        </div>
+        <div className="skillSetContainer">
+          <h5>Others</h5>
+          <div className="skillIconContainer">
+            <Icon icon="logos:elasticsearch" style={{ fontSize: "6rem" }} />
+            <Icon icon="skill-icons:figma-dark" style={{ fontSize: "6rem" }} />
+            <Icon icon="logos:linux-tux" style={{ fontSize: "6rem" }} />
+            <Icon
+              icon="vscode-icons:file-type-nginx"
+              style={{ fontSize: "6rem" }}
+            />
+            <Icon
+              icon="vscode-icons:file-type-apache"
+              style={{ fontSize: "6rem" }}
+            />
+            <Icon icon="skill-icons:docker" style={{ fontSize: "6rem" }} />
           </div>
         </div>
       </div>

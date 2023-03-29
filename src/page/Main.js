@@ -7,6 +7,7 @@ import {
 } from "../SliderContents";
 import { Aboutme } from "../Aboutme";
 import { Skills } from "../Skills";
+import { Projects } from "../Projects";
 
 export default function Main() {
   return (
@@ -24,6 +25,7 @@ export default function Main() {
         </Slider>
       </section>
       <Skills />
+      <Projects />
       <Aboutme />
     </div>
   );
