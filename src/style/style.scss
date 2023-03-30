@@ -84,6 +84,14 @@ li {
   word-break: keep-all;
 }
 
+pre {
+  font-size: var(--font-size-xs);
+  font-family: "NanumSquareRound";
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow: auto;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -401,4 +409,23 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.projectElementDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+.projectContent {
+  display: flex;
+
+  & > :nth-child(n) {
+    flex: 1;
+    padding: 0 1rem;
+  }
 }
