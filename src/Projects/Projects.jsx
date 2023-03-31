@@ -13,7 +13,8 @@ const Projects = () => {
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀 프로젝트 (3인) - 프론트1 / 백엔드 2<br />
                 담당 업무 : 팀원 / 프론트엔드 개발 <br />
-                사용 기술/ 툴 : React, JavaScript, Sass, Figma, Slack <br />
+                사용 기술/ 툴 : React, JavaScript, Sass, Figma, Slack, Github
+                <br />
                 프로젝트 기간 : 2022.12.17 ~
               </pre>
             </div>
@@ -59,7 +60,7 @@ const Projects = () => {
                 프로젝트 형태 : 개인 프로젝트
                 <br />
                 담당 업무 : Fullstack <br />
-                사용 기술/ 툴 : React, JavaScript, Sass <br />
+                사용 기술/ 툴 : React, JavaScript, Sass, Github <br />
                 프로젝트 기간 : 2023.01.05 ~
               </pre>
             </div>
@@ -69,49 +70,119 @@ const Projects = () => {
         <div className="projectElementDiv">
           <h5>FaceReconginition OpenSource</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 팀 프로젝트 (4인) - 프론트 1 / 백엔드 1 / AI 2{" "}
+                <br />
+                담당 업무 : 프론트엔드개발 <br />
+                사용 기술/ 툴 : React, JavaScript, Github <br />
+                프로젝트 기간 : 2022.11. ~ 2022.12
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>대흥동 문화의집 웹페이지 제작</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 팀프로젝트 (n명)
+                <br />
+                담당 업무 : 프론트엔드개발 <br />
+                사용 기술/ 툴 : HTML, CSS, JavaScript, Github <br />
+                프로젝트 기간 : 2022.05. ~ 2022.11
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>1kmwine 사장님 앱</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 팀프로젝트 (n명)
+                <br />
+                담당 업무 : 프론트엔드개발 <br />
+                사용 기술/ 툴 : React, Eslint, Mui, Elasticsearch, Firebase,
+                Slack, Github
+                <br />
+                프로젝트 기간 : 2022.08
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>Booth stamp</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 개인프로젝트
+                <br />
+                담당 업무 : Fullstack <br />
+                사용 기술/ 툴 : Flutter, Dart, Firebase, Figma, Github
+                <br />
+                프로젝트 기간 : 2022.07 ~ 2022.08
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>달이 들어주는 오늘</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 팀프로젝트 (5인)
+                <br />
+                담당 업무 : 프론트엔드, 클라우드 <br />
+                사용 기술/ 툴 : ReactNative, Expo, Oracle Cloud, Nginx,
+                Gunicorn, Figma, Github
+                <br />
+                프로젝트 기간 : 2022.06 ~ 2022.07
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>슬기로운 문화생활</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 팀프로젝트 (5인)
+                <br />
+                담당 업무 : FullStack <br />
+                사용 기술/ 툴 : Flutter, Dart, Firebase, Figma, Github
+                <br />
+                프로젝트 기간 : 2022.01
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
         <div className="projectElementDiv">
           <h5>CNmusicFesta 홈페이지</h5>
           <div className="projectContent">
-            <div>프로젝트 이미지가 들어갈곳</div>
+            <div>
+              프로젝트 이미지가 들어갈곳
+              <pre style={{ textAlign: "left" }}>
+                프로젝트 형태 : 개인프로젝트
+                <br />
+                담당 업무 : FullStack <br />
+                사용 기술/ 툴 : HTML, CSS, JavaScript, Apache, AWS, Github
+                <br />
+                프로젝트 기간 : 2022.06 ~ 2022.07
+              </pre>
+            </div>
             <div>프로젝트 간단 설명</div>
           </div>
         </div>
