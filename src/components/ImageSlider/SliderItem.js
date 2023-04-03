@@ -1,3 +1,3 @@
-const SliderItem = () => {
+const SliderItem = ({ imageArray }) => {
   return <div></div>;
 };
