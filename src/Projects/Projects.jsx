@@ -1,4 +1,4 @@
-import { Spacer, ImageSlider } from "../components";
+import { Spacer, ImageSlider, SlickSlider } from "../components";
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
           <h5>CheerDo</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" />
+              <ImageSlider type="mobile" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀 프로젝트 (3인) - 프론트1 / 백엔드 2<br />
                 담당 업무 : 팀원 / 프론트엔드 개발 <br />
@@ -56,7 +56,7 @@ const Projects = () => {
           <h5>Portfolio</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" />
+              <ImageSlider type="web" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인 프로젝트
                 <br />
@@ -95,7 +95,7 @@ const Projects = () => {
           <h5>FaceReconginition OpenSource</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" />
+              <ImageSlider type="web" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀 프로젝트 (4인) - 프론트 1 / 백엔드 1 / AI 2{" "}
                 <br />
@@ -129,11 +129,11 @@ const Projects = () => {
                 진행했습니다. <br />
                 비록 작은 규모의 프로젝트였지만 모르는 사람의 레포지토리에
                 기여를 해보는 경험을 통해 모르는 개발자 분과 소통해서 기여하는
-                것이 재밌고 의미있던 프로젝트 였습니다. <br /> 작업한 후 PR을
-                통해 Merge가 됐을 때의 기분이 많이 뿌듯하게 느꼈기 때문에, 이
-                후에 오픈소스에 참여할 수 있다는 자신감이 생겼고, 사용하는
-                오픈소스 중에 필요한 점이 보인다면 참여를 반드시 더 해볼
-                생각입니다.
+                것이 재밌고 의미있던 프로젝트 였습니다. <br />
+                작업한 후 PR을 통해 Merge가 됐을 때의 기분이 많이 뿌듯하게
+                느꼈기 때문에, 이 후에 오픈소스에 참여할 수 있다는 자신감이
+                생겼고, 사용하는 오픈소스 중에 필요한 점이 보인다면 참여를
+                반드시 더 해볼 생각입니다.
               </pre>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Projects = () => {
           <h5>대흥동 문화의집 웹페이지 제작</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" />
+              <ImageSlider type="web" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (n명)
                 <br />
@@ -177,7 +177,7 @@ const Projects = () => {
           <h5>1kmwine 사장님 앱</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" />
+              <ImageSlider type="mobile" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (n명)
                 <br />
@@ -223,7 +223,7 @@ const Projects = () => {
           <h5>Booth stamp</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" />
+              <ImageSlider type="mobile" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인프로젝트
                 <br />
@@ -272,7 +272,7 @@ const Projects = () => {
           <h5>달이 들어주는 오늘</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" />
+              <ImageSlider type="mobile" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (5인)
                 <br />
@@ -291,12 +291,13 @@ const Projects = () => {
                 어렸을 때 일기를 써가면 선생님께서 코맨트를 달아주시는 것에서
                 아이디어를 착안하였고, 바쁜 현대인에게 일상을 기록하고 AI의
                 코멘트 통해 위로받는 어플리케이션을 기획했습니다. <br />
-                실제 SilliconValley에 위치한 회사인 HeadState 사의 대표님과 미국
+                실제 SilliconValley에 위치한 회사인 HeadStart 사의 대표님과 미국
                 현지 개발자들의 강연을 오전에 들으면서 오후에는 팀 단위로
-                프로젝트를 진행했습니다. <br /> 빠른 하이브리드앱 개발과 React
-                공부를 더 해보기 위해 ReactNative를 선택했고, 애뮬레이터 사용이
-                컴퓨터의 사양문제로 매우 느렸기 때문에, Expo를 통해 핸드폰으로
-                실시간 확인하면서 개발을 진행했습니다.
+                프로젝트를 진행했습니다. <br />
+                빠른 하이브리드앱 개발과 React 공부를 더 해보기 위해
+                ReactNative를 선택했고, 애뮬레이터 사용이 컴퓨터의 사양문제로
+                매우 느렸기 때문에, Expo를 통해 핸드폰으로 실시간 확인하면서
+                개발을 진행했습니다.
               </pre>
               <p>느낀점</p>
               <pre>
@@ -308,11 +309,12 @@ const Projects = () => {
                 이전까지 프로젝트를 진행할 때 혼자서 혹은 같은 학교의 동기,
                 선/후배들과만 진행했었는데, 타 학교의 친구들과 협업하는 과정에서
                 기술공유도 많이 될 수 있었고 인맥을 쌓을 수 있어서 좋았습니다.
-                <br /> 가장 좋았던 점은 실리콘벨리 현업에서 Front-end 개발자로
-                일하시는 Danny Song 멘토님과의 코드 리뷰 과정이 좋았습니다.
-                프로젝트 전반적인 폴더구조와 모듈, 컴포넌트화를 시켜야 할 것들을
-                코드 하나하나씩 봐주시면서 수정할 수 있도록 도와주셨고, 그것을
-                토대로 코드를 정리하다보니 코드가 훨씬 깔끔해지고, 다음부터는
+                <br />
+                가장 좋았던 점은 실리콘벨리 현업에서 Front-end 개발자로 일하시는
+                Danny Song 멘토님과의 코드 리뷰 과정이 좋았습니다. 프로젝트
+                전반적인 폴더구조와 모듈, 컴포넌트화를 시켜야 할 것들을 코드
+                하나하나씩 봐주시면서 수정할 수 있도록 도와주셨고, 그것을 토대로
+                코드를 정리하다보니 코드가 훨씬 깔끔해지고, 다음부터는
                 컴포넌트를 잘 분리해서 만들어야겠다는 다짐을 갖게 됐습니다.
               </pre>
             </div>
@@ -322,7 +324,7 @@ const Projects = () => {
           <h5>슬기로운 문화생활</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" />
+              <ImageSlider type="mobile" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (5인)
                 <br />
@@ -337,9 +339,10 @@ const Projects = () => {
               <pre>
                 겨울 방학 특강으로 Design-sprint 교육을 받으면서 진행한
                 프로젝트로 처음으로 Flutter, Dart, Firebase, Figma를 사용해 첫
-                모바일 앱 구현 프로젝트였습니다. <br /> 대전에 놀 거리가
-                없다라는 것에서 시작해 볼 거리, 즐길 거리를 한눈에 볼 수 있는
-                슬기로운 문화생활이라는 어플리케이션을 제작했습니다. <br />
+                모바일 앱 구현 프로젝트였습니다. <br />
+                대전에 놀 거리가 없다라는 것에서 시작해 볼 거리, 즐길 거리를
+                한눈에 볼 수 있는 슬기로운 문화생활이라는 어플리케이션을
+                제작했습니다. <br />
                 기존 놀거리를 확인할 때는 네이버/인스타그램 검색을 통해
                 알아봐야만 했는데, 사용자들이 직접 놀 공간을 추가하고 공유함으로
                 자유도를 두었고, 또한 버스킹도 등록하여 사람들이 많이 찾아올 수
@@ -365,7 +368,7 @@ const Projects = () => {
           <h5>CNmusicFesta 홈페이지</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" />
+              <ImageSlider type="web" groupName="Moon" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인프로젝트
                 <br />

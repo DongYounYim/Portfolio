@@ -1,17 +1,16 @@
 import SliderContainer from "./SliderContainer";
+import SliderItem from "./SliderItem";
 
-const ImageSlider = ({ type }) => {
+const ImageSlider = ({ type, groupName }) => {
   return (
     <div
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        display: "inline-block",
       }}
     >
-      <span>{"<"}</span>
-      <SliderContainer type={type} />
-      <span>{">"}</span>
+      <SliderContainer type={type}>
+        <SliderItem groupName={groupName} />
+      </SliderContainer>
     </div>
   );
 };
