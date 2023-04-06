@@ -9,7 +9,7 @@ const Projects = () => {
           <h5>CheerDo</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" groupName="Moon" />
+              <ImageSlider type="mobile" groupName="Todo" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀 프로젝트 (3인) - 프론트1 / 백엔드 2<br />
                 담당 업무 : 팀원 / 프론트엔드 개발 <br />
@@ -56,7 +56,7 @@ const Projects = () => {
           <h5>Portfolio</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" groupName="Moon" />
+              <ImageSlider type="web" groupName="Port" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인 프로젝트
                 <br />
@@ -95,7 +95,7 @@ const Projects = () => {
           <h5>FaceReconginition OpenSource</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" groupName="Moon" />
+              <ImageSlider type="web" groupName="Face" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀 프로젝트 (4인) - 프론트 1 / 백엔드 1 / AI 2{" "}
                 <br />
@@ -142,7 +142,7 @@ const Projects = () => {
           <h5>대흥동 문화의집 웹페이지 제작</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" groupName="Moon" />
+              <ImageSlider type="web" groupName="Dae" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (n명)
                 <br />
@@ -177,7 +177,7 @@ const Projects = () => {
           <h5>1kmwine 사장님 앱</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" groupName="Moon" />
+              <ImageSlider type="mobile" groupName="Wine" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (n명)
                 <br />
@@ -223,7 +223,7 @@ const Projects = () => {
           <h5>Booth stamp</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" groupName="Moon" />
+              <ImageSlider type="mobile" groupName="Booth" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인프로젝트
                 <br />
@@ -324,7 +324,7 @@ const Projects = () => {
           <h5>슬기로운 문화생활</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="mobile" groupName="Moon" />
+              <ImageSlider type="mobile" groupName="Culture" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 팀프로젝트 (5인)
                 <br />
@@ -368,7 +368,7 @@ const Projects = () => {
           <h5>CNmusicFesta 홈페이지</h5>
           <div className="projectContent">
             <div>
-              <ImageSlider type="web" groupName="Moon" />
+              <ImageSlider type="web" groupName="Music" />
               <pre style={{ textAlign: "left" }}>
                 프로젝트 형태 : 개인프로젝트
                 <br />
