@@ -8,6 +8,7 @@ import {
 import { Aboutme } from "../Aboutme";
 import { Skills } from "../Skills";
 import { Projects } from "../Projects";
+import { Activity } from "../Activity";
 
 export default function Main() {
   return (
@@ -26,6 +27,7 @@ export default function Main() {
       </section>
       <Skills />
       <Projects />
+      <Activity />
       <Aboutme />
     </div>
   );
